@@ -1,0 +1,17 @@
+body {
+    font-size: 100%;
+    font-family: 'red hat display', sans-serif;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: #000;
+}

@@ -1,0 +1,170 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+@import "./variables";
+@import "./globals";
+
+
+.container {
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: $Very-pale-blue;
+    background-image: url(../images/pattern-background-mobile.svg);
+
+    @media screen and (min-width: 1440px) {
+        background-image: url(../images/pattern-background-desktop.svg);
+    }
+    
+}
+
+.card {
+
+    position: relative;
+    width: 21em;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: $White;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.card-header {
+
+    height: 25%;
+    margin-bottom: 1.75em;
+
+    .card-hero {
+        width: 100%;
+    }
+}
+
+.card-body {
+
+    margin: 0 1.375em 2em 1.375em;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 1em;
+        font-weight: 900;
+        color: $Dark-blue;
+    }
+
+    p {
+        margin-bottom: 2.25em;
+
+        color: $Desaturated-blue;
+        line-height: 2em;
+    }
+
+    .badge {
+
+        width: 100%;
+        padding: 0.5em 1em;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        background-color: $Very-pale-blue;
+        border-radius: 0.5em;
+
+        .badge-description {
+
+            margin-right: 1em;
+
+            display: flex;
+            flex-direction: column;
+
+            .badge-description--title {
+                font-weight: 900;
+                color: $Dark-blue;
+            }
+
+            .badge-description--price {
+                align-self: flex-start;
+                font-weight: 500;
+                font-size: 0.825em;
+                color: $Desaturated-blue;
+            }
+
+        }
+
+        .badge-change {
+            font-size: 0.75em;
+            font-weight: 700;
+            color: $Bright-blue;
+            text-decoration: underline;
+
+            transition: text-decoration 150ms ease, opacity 100ms ease;
+
+            &:hover, &:focus {
+                text-decoration: none;
+                opacity: .8;
+            }
+        }
+
+    }
+    
+}
+
+.card-footer {
+
+    width: 80%;
+    margin: 0 auto 0.5em;
+
+    display: flex;
+    flex-direction: column;
+
+    .btn {
+        width: 100%;
+        height: 3.5em;
+        margin: 0.825em auto;
+        
+        font-weight: 700;
+
+        outline: none;
+        border: none;
+        border-radius: 0.75em;
+        cursor: pointer;
+
+        &__confirm {
+
+            background-color: $Bright-blue;
+            color: $Very-pale-blue;
+            box-shadow: 0 1em 0.75em 5px $Pale-blue;
+
+            transition: 200ms ease-in-out;
+
+            &:hover, &:focus {
+                opacity: .8;
+            }
+
+        }
+
+        &__cancel {
+
+            background-color: transparent;
+            color: $Desaturated-blue;
+
+            transition: 200ms ease-in-out;
+
+            &:hover, &:focus {
+                color: $Dark-blue;
+            }
+
+        }
+
+    }
+}

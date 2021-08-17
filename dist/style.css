@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+body {
+  font-size: 100%;
+  font-family: 'red hat display', sans-serif;
+  font-weight: 500;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #f5f7ff;
+  background-image: url(../images/pattern-background-mobile.svg);
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    background-image: url(../images/pattern-background-desktop.svg);
+  }
+}
+
+.card {
+  position: relative;
+  width: 21em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.card-header {
+  height: 25%;
+  margin-bottom: 1.75em;
+}
+
+.card-header .card-hero {
+  width: 100%;
+}
+
+.card-body {
+  margin: 0 1.375em 2em 1.375em;
+  text-align: center;
+}
+
+.card-body h2 {
+  margin-bottom: 1em;
+  font-weight: 900;
+  color: #1f2f56;
+}
+
+.card-body p {
+  margin-bottom: 2.25em;
+  color: #7280a7;
+  line-height: 2em;
+}
+
+.card-body .badge {
+  width: 100%;
+  padding: 0.5em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5f7ff;
+  border-radius: 0.5em;
+}
+
+.card-body .badge .badge-description {
+  margin-right: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-body .badge .badge-description .badge-description--title {
+  font-weight: 900;
+  color: #1f2f56;
+}
+
+.card-body .badge .badge-description .badge-description--price {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-weight: 500;
+  font-size: 0.825em;
+  color: #7280a7;
+}
+
+.card-body .badge .badge-change {
+  font-size: 0.75em;
+  font-weight: 700;
+  color: #3829e0;
+  text-decoration: underline;
+  -webkit-transition: opacity 100ms ease, -webkit-text-decoration 150ms ease;
+  transition: opacity 100ms ease, -webkit-text-decoration 150ms ease;
+  transition: text-decoration 150ms ease, opacity 100ms ease;
+  transition: text-decoration 150ms ease, opacity 100ms ease, -webkit-text-decoration 150ms ease;
+}
+
+.card-body .badge .badge-change:hover, .card-body .badge .badge-change:focus {
+  text-decoration: none;
+  opacity: .8;
+}
+
+.card-footer {
+  width: 80%;
+  margin: 0 auto 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-footer .btn {
+  width: 100%;
+  height: 3.5em;
+  margin: 0.825em auto;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  border-radius: 0.75em;
+  cursor: pointer;
+}
+
+.card-footer .btn__confirm {
+  background-color: #3829e0;
+  color: #f5f7ff;
+  -webkit-box-shadow: 0 1em 0.75em 5px #e0e8ff;
+          box-shadow: 0 1em 0.75em 5px #e0e8ff;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.card-footer .btn__confirm:hover, .card-footer .btn__confirm:focus {
+  opacity: .8;
+}
+
+.card-footer .btn__cancel {
+  background-color: transparent;
+  color: #7280a7;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.card-footer .btn__cancel:hover, .card-footer .btn__cancel:focus {
+  color: #1f2f56;
+}
+/*# sourceMappingURL=style.css.map */
